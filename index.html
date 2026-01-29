@@ -15,17 +15,113 @@
 </head>
 
 <body>
-    <header>
-        <a href=""><img src="./images/burger.svg" alt="menu"></a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./catalog.html"></a>Catalog</li>
-                <li><a href="./contact.html"></a>Contact Us</li>
-            </ul>
-        </nav>
-    </header>
+    <!----------------------- header---------- ----------->
+    <div class="container">
+        <header>
+            <a href="" class="menu"><img src="./images/burger.svg" alt="burger menu"></a>
+            <nav>
+                <ul class="header_ul">
+                    <li><a href="./index.html" class="header_ul_li">Home</a></li>
+                    <li><a href="./catalog.html" class="header_ul_li">Catalog</a></li>
+                    <li><a href="./contact.html" class="header_ul_li">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="./index.html"><img src="./images/logo.svg" alt="site logo"></a>
+            <div class="icons">
+                <button class="header_icons">
+                    <a href="./catalog.html"><img src="./images/search.svg" alt="search items"></a>
+                </button>
+                <button class="header_icons user_icon">
+                    <a href="./contact.html"><img src="./images/user.svg" alt="sign in"></a>
+                </button>
+                <button class="header_icons">
+                    <a href="#"><img src="./images/cart.svg" alt="see cart"></a>
+                </button>
+            </div>
+        </header>
 
+        <!---------------- section1 ---------------------->
+        <section class="section_first">
+            <div class="section_container">
+                <a href="./catalog.html">
+                    <span class="span1"> NEW COLLECTION </span>
+                    <img src="./images/arrow.svg" class="arrow" alt="see more"></a>
+            </div>
+        </section>
+        <!------------------- section2 ------------------------>
+        <section class="section_second">
+            <h2>Most Popular</h2>
+            <div class="section_second_container">
+                <article class="section_card">
+                    <img src="./images/firstgrid.png" alt="popular product" class="section_card_img">
+                    <h3>Product title</h3>
+                    <div class="card">
+                        <span>$950</span>
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="section_card">
+                    <img src="./images/firstgrid.png" alt="popular product" class="section_card_img">
+                    <h3>Product title</h3>
+                    <div class="card">
+                        <span>$950</span>
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="section_card">
+                    <img src="./images/firstgrid.png" alt="popular product" class="section_card_img">
+                    <h3>Product title</h3>
+                    <div class="card">
+                        <span>$950</span>
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="section_card">
+                    <img src="./images/firstgrid.png" alt="popular product" class="section_card_img">
+                    <h3>Product title</h3>
+                    <div class="card">
+                        <span>$950</span>
+                        <button>ADD</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!------------------- footer  ------------------------->
+        <footer>
+            <div class="footer">
+                <ul class="footer_ul">
+                    <li class="h4">Brands</li>
+                    <li class="footer_ul_li">Fender</li>
+                    <li class="footer_ul_li">Gibson</li>
+                    <li class="footer_ul_li">Jackson</li>
+                    <li class="footer_ul_li">Ibanez</li>
+                </ul>
+                <ul class="footer_ul">
+                    <li class="h4">Information</li>
+                    <li class="footer_ul_li">Blog</li>
+                    <li class="footer_ul_li">Delivery</li>
+                    <li class="footer_ul_li">About us</li>
+                </ul>
+                <div class="footer_div">
+                    <h4 class="h4">Contact</h4>
+                    <address>
+                        <a href="https://maps.app.goo.gl/mFnLn9mU8zGtsDW49" target="_blank"
+                            class="contacts footer_ul_li">Tbilisi, str, Rustaveli 24</a>
+                        <a href="tel:++(32)2 56 78 98" class="contacts footer_ul_li">+(32)2 56 78 98</a>
+                        <div class="footer_socials">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.svg"
+                                    alt="facebook link"></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><img src="./images/whatsapp.svg"
+                                    alt="whatsapp link"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./images/facebook.svg"
+                                    alt="instagram link"></a>
+                        </div>
+                    </address>
+                </div>
+
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
