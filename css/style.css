@@ -27,6 +27,7 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .header_ul {
@@ -66,6 +67,7 @@ header {
     display: flex;
     column-gap: 32px;
 }
+
 .header_icons {
     width: 40px;
     height: 40px;
@@ -77,7 +79,8 @@ header {
     justify-content: center;
     transition: box-shadow 0.25s ease, transform 0.2s ease;
 }
-.user_icon{
+
+.user_icon {
     background-color: #05BCCA;
     border: none;
 }
@@ -96,7 +99,7 @@ header {
 }
 
 /* section1 */
-.section_first {
+.home_section {
     background-image: url(../images/cover.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +107,7 @@ header {
     font-size: 100px;
 }
 
-.section_container {
+.home_section_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +173,7 @@ header {
 }
 
 /* section2 */
-.section_second {
+.home_section_second {
     background-color: #1A1A1A;
     padding: 96px 94px;
 }
@@ -186,15 +189,23 @@ h2 {
     margin-bottom: 64px;
 }
 
-.section_second_container {
+.home_section_second_container {
     display: flex;
     column-gap: 20px;
 }
 
-.section_card {
+.home_section_card {
+    position: relative;
     background-color: #2C4246;
     padding: 8px;
-    border: 1px solid #05BCCA
+    border: 1px solid #05BCCA;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.home_section_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 h3 {
@@ -228,7 +239,7 @@ span {
     line-height: 27px;
 }
 
-button {
+.card_btn {
     width: 58px;
     height: 28px;
     background-color: #C46A2B;
@@ -239,7 +250,24 @@ button {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
 }
+
+.card_btn:hover {
+    background: #C46A2B;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(161, 195, 201, 0.6);
+}
+
+.card_btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(161, 195, 201, 0.4);
+}
+
 
 /* footer */
 footer {
@@ -282,6 +310,11 @@ li,
 .footer_socials {
     display: flex;
     column-gap: 16px;
+    transition: transform 0.25s ease;
+}
+
+.footer_socials a:hover {
+    transform: translateY(-6px);
 }
 
 .footer_ul_li {
