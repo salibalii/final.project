@@ -283,7 +283,7 @@ footer {
 
 .footer_ul,
 .footer_div,
-address {
+.footer_address {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -547,4 +547,157 @@ h5 {
 .next_page:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* main  */
+main {
+
+    background-image: url(../images/cover2.png);
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px 201px;
+}
+
+/* main section  */
+.main_section {
+    padding: 32px;
+    display: flex;
+    column-gap: 40px;
+    border: 1px solid #05BCCA;
+    border-radius: 10px;
+    background: #2C4246CC;
+}
+
+/* form section  */
+.form_section {
+    width: 440px;
+}
+
+.form_section_title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 0;
+    animation: typing 2s steps(20) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+.form_inputs {
+    display: flex;
+    column-gap: 60px;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    height: 40px;
+    padding-inline: 8px;
+    color: #05BCCA;
+}
+
+::placeholder {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: #FFFFFFC2;
+}
+
+textarea {
+    padding: 8px;
+    height: 96px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    color: #05BCCA;
+    resize: none;
+}
+
+.submit_btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C46A2B;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.submit_btn:hover {
+    background: #f76700;
+    color: #fff;
+}
+
+/* map section  */
+.map_section {
+    width: 494px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+}
+
+.address_contacts {
+    display: flex;
+    column-gap: 72px;
+}
+
+.address_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    background-color: #05BCCA;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.address_link:hover {
+    background-color: #2C4246;
+    transform: translateY(-2px);
+}
+
+iframe {
+    width: 100%;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 10px;
 }
