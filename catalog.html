@@ -11,6 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>Document</title>
 </head>
 
@@ -18,15 +21,16 @@
     <div class="container">
         <!-- ------------------ header ---------------- -->
         <header>
-            <a href="" class="menu"><img src="./images/burger.svg" alt="burger menu"></a>
-            <nav>
+            <img src="./images/burger.svg" alt="burger menu" class="burger_menu">
+            <img src="./images/xmark.svg" alt="close burger menu" class="x_mark">
+            <nav class="burger_list">
                 <ul class="header_ul">
                     <li><a href="./index.html" class="header_ul_li">Home</a></li>
                     <li><a href="./catalog.html" class="header_ul_li">Catalog</a></li>
                     <li><a href="./contact.html" class="header_ul_li">Contact Us</a></li>
                 </ul>
             </nav>
-            <a href="./index.html"><img src="./images/logo.svg" alt="site logo"></a>
+            <a href="./index.html"><img src="./images/logo.svg" alt="site logo" class="site_logo"></a>
             <div class="icons">
                 <a href="./catalog.html" class="header_icons">
                     <img src="./images/search.svg" alt="search items">
@@ -49,13 +53,13 @@
                     <img src="./images/filter.svg" alt="filter">
                 </div>
                 <div class="sort">
-                    <span class="catalog_span">Sort by:</span>
-                    <select>
+                    <span class="catalog_span catalog_sort">Sort by:</span>
+                    <select class="none480">
                         <option selected> Best selling</option>
-                        <option value="popular">Most popular</option>
-                        <option value="expensive">Expensive</option>
-                        <option value="cheap">Budget friendly</option>
-                        <option value="new">Recently added</option>
+                        <option value="popular" >Most popular</option>
+                        <option value="expensive" >Expensive</option>
+                        <option value="cheap" >Budget friendly</option>
+                        <option value="new" >Recently added</option>
                     </select>
                 </div>
             </div>
@@ -100,7 +104,7 @@
                         </button>
                     </div>
                 </article>
-                <article class="grid_article">
+                <article class="grid_article none744">
                     <img src="./images/guitar5.png" alt="black guitar" class="grid_guitar">
                     <h5 class="card_name">lorem ipsum</h5>
                     <div class="catalog_cards">
@@ -110,7 +114,7 @@
                         </button>
                     </div>
                 </article>
-                <article class="grid_article">
+                <article class="grid_article none744">
                     <img src="./images/guitar6.png" alt="black guitar" class="grid_guitar">
                     <h5 class="card_name">lorem ipsum</h5>
                     <div class="catalog_cards">
@@ -120,7 +124,7 @@
                         </button>
                     </div>
                 </article>
-                <article class="grid_article">
+                <article class="grid_article none1180">
                     <img src="./images/guitar7.png" alt="black guitar" class="grid_guitar">
                     <h5 class="card_name">lorem ipsum</h5>
                     <div class="catalog_cards">
@@ -130,7 +134,7 @@
                         </button>
                     </div>
                 </article>
-                <article class="grid_article">
+                <article class="grid_article none1180">
                     <img src="./images/guitar8.png" alt="black guitar" class="grid_guitar">
                     <h5 class="card_name">lorem ipsum</h5>
                     <div class="catalog_cards">
@@ -140,7 +144,7 @@
                         </button>
                     </div>
                 </article>
-                <article class="grid_article">
+                <article class="grid_article none1180">
                     <img src="./images/guitar9.png" alt="black guitar" class="grid_guitar">
                     <h5 class="card_name">lorem ipsum</h5>
                     <div class="catalog_cards">
@@ -152,9 +156,9 @@
                 </article>
             </div>
             <div class="catalog_pages">
-                <button class="previous_page"><img src="./images/arrow_left.svg" alt="previous page">Previous</button>
+                <button class="previous_page"><img src="./images/arrow_left.svg" alt="previous page"> <span class="btn_text">Previous</span></button>
                 <span class="pages">Page 1 of 5</span>
-                <button class="next_page">Next<img src="./images/arrow_right.svg" alt="next page"></button>
+                <button class="next_page"> <span class="btn_text">Next</span><img src="./images/arrow_right.svg" alt="next page"></button>
             </div>
         </section>
         <!------------------ footer  --------------------------->
@@ -192,7 +196,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>

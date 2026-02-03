@@ -1,0 +1,67 @@
+@media (max-width: 1180px) {
+
+    /* header */
+    header {
+        padding-inline: 32px;
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .burger_list {
+        position: fixed;
+        top: 98.4px;
+        left: -100%;
+        background-color: #C46A2B;
+        transition: .5s linear;
+    }
+
+    .header_ul {
+        flex-direction: column;
+        row-gap: 8px;
+        padding: 16px 56px 16px 16px;
+    }
+
+    /* section 2 */
+    .home_section_second {
+        padding: 96px 0px 96px 32px;
+    }
+
+    .home_section_second_container {
+        overflow-x: scroll;
+    }
+
+    .home_section_card {
+        flex: 1 0 272px;
+    }
+
+    /* footer  */
+    footer {
+        padding: 48px 242px;
+    }
+
+    /* catalog  */
+    /* catalog section  */
+    .catalog_section {
+        padding: 96px 32px;
+    }
+
+    .catalog_section_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .none1180 {
+        display: none;
+    }
+
+    /* main  */
+    main {
+        padding: 140px 32px;
+    }
+
+    .form_section,
+    .map_section {
+        width: 506px;
+    }
+}

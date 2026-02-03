@@ -1,0 +1,85 @@
+@media (max-width: 481px) {
+
+    /* header  */
+    header {
+        padding: 28px 20px;
+    }
+
+    .site_logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icons {
+        column-gap: 16px;
+    }
+
+    /* section1  */
+    .span1,
+    .span2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* section2  */
+    .home_section_second {
+        padding: 32px 0px 32px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* footer  */
+    footer {
+        padding-block: 32px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .footer_ul,
+    .footer_div,
+    .footer_address {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* catalog  */
+    .catalog_section {
+        padding: 32px 20px;
+    }
+
+    .catalog_section_container{
+        margin-bottom: 40px;
+    }
+
+    .catalog_span {
+        display: none;
+    }
+
+    .catalog_sort {
+        display: block;
+    }
+
+    select {
+        color: transparent;
+        width: 36px;
+        height: 32px;
+        background-image: url(../images/sort_arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .grid_cart{
+        width: 23px;
+        height: 23px;
+    }
+    .catalog_pages{
+        margin-top: 54px;
+    }
+}

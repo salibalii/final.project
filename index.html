@@ -11,6 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>Document</title>
 </head>
 
@@ -18,15 +21,16 @@
     <!----------------------- header---------- ----------->
     <div class="container">
         <header>
-            <a href="" class="menu"><img src="./images/burger.svg" alt="burger menu"></a>
-            <nav>
+            <img src="./images/burger.svg" alt="burger menu" class="burger_menu">
+            <img src="./images/xmark.svg" alt="close burger menu" class="x_mark">
+            <nav class="burger_list">
                 <ul class="header_ul">
                     <li><a href="./index.html" class="header_ul_li">Home</a></li>
                     <li><a href="./catalog.html" class="header_ul_li">Catalog</a></li>
                     <li><a href="./contact.html" class="header_ul_li">Contact Us</a></li>
                 </ul>
             </nav>
-            <a href="./index.html"><img src="./images/logo.svg" alt="site logo"></a>
+            <a href="./index.html"><img src="./images/logo.svg" alt="site logo" class="site_logo"></a>
             <div class="icons">
                 <a href="./catalog.html" class="header_icons">
                     <img src="./images/search.svg" alt="search items">
@@ -123,6 +127,7 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
