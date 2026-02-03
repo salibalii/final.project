@@ -104,6 +104,7 @@ header {
     background-image: url(../images/cover.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 560px;
     font-size: 100px;
 }
